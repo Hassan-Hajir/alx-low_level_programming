@@ -1,10 +1,12 @@
 #include<stdio.h>
-#include<unistd.h>
 /*
-*main - Entry point to the program
-*Description: prints the alphabet in lowercase\n
-*Return: 0 if sucessful or otherwise
+* main -  Entry point
+*
+* Description - outputs the alphabet in lowercase, followed by a new line
+*
+* Return - type (0)
 */
+
 int main(void)
 {
 	char c = 'a';
