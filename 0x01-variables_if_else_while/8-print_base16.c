@@ -1,9 +1,9 @@
 #include<stdio.h>
 /**
-*main -Entry
-*Description: prints numbers of base 16 in lowercase
-*Return: 0
-*/
+ *main -Entry 
+ *Description: prints numbers of base 16 in lowercase
+ *Return: 0
+ */
 int main(void)
 {
 	char x;
@@ -14,7 +14,8 @@ int main(void)
 	}
 	for (x = 'a'; x <= 'f'; x++)
 	{
-	putchar('\n');
+	putchar(x);
 	}
+	putchar('\n');
 	return (0);
 }
