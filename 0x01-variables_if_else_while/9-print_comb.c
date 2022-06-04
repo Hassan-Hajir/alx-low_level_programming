@@ -2,20 +2,20 @@
 /**
  *main -entry
  *Description: prints base 16 numbers
- *Return 0
+ *Return: 0
  */
 int main(void)
 {
-	char c;
-	char d = '0';
+	int c;
 
-	while ( d <= '9)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(d);
-		d++
+		putchar(c);
+		if (c != '9')
+		{
+			putchar(' ');
+		}
 	}
-	for (c = 'a'; c <= 'f'; c++)
-	{
-		putchar('\);
-	return 0;
+	putchar('\n');
+	return (0);
 }
