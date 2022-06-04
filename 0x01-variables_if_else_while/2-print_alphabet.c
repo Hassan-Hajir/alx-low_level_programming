@@ -1,10 +1,9 @@
 #include<stdio.h>
-/*
-* main -  Entry point
+/**
+*main - Entry
 *
-* Description - outputs the alphabet in lowercase, followed by a new line
-*
-* Return - type (0)
+*Description: prints the alphabet in lowercase, followed by a new line
+*Return: Always 0
 */
 
 int main(void)

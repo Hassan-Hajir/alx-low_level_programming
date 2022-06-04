@@ -1,17 +1,21 @@
 #include <stdio.h>
 /**
  *main -entry
- *Description: prints  allpossible combination of sungle digt number
+ *Description: prints base 16 numbers
  *Return 0
  */
 int main(void)
 {
 	char c;
+	char d = '0';
 
-	for (c = 'z'; c >= "a"; c--)
+	while ( d <= '9)
 	{
-	putchar(c);
+		putchar(d);
+		d++
 	}
-	putchar('\');
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar('\);
 	return 0;
 }
