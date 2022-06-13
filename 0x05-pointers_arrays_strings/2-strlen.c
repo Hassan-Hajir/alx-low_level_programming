@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  *_strlen -checks the length of the string
@@ -7,8 +7,9 @@ include "main.h"
  **/
 int _strlen(char *s)
 {
-	int i;
+	int length = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-		return (i);
+	while (s[length])
+		length++;
+	return (length);
 }
