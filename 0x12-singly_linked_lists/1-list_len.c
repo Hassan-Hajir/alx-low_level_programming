@@ -2,8 +2,7 @@
 
 /**
  *list_len - returns the alements in list.
- *@h: The singly linked list.
- *@elements: a counter var for size_t (nodes)
+ *@h: The singly linked list
  *Return: The number of elements in the list
  */
 size_t list_len(const list_t *h)
