@@ -1,13 +1,13 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - Retrieve the value associated with a key in a hash table.
- *
+ * hash_table_get - Retrieve the value associated with
+ *                  a key in a hash table.
  * @ht: A pointer to the hash table.
  * @key: The key to get the value of.
  *
  * Return: If the key cannot be matched - NULL.
- *         Otherwise - the value associated with the key in the hash table.
+ *         Otherwise - the value associated with key in ht.
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -22,11 +22,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	node = ht->array[index];
-	while (node != NULL)
-	{
-		if (strcmp(node->key, key) == 0)
-			return (node->value);
+	while (node && strcmp(node->key, key) != 0)
 		node = node->next;
-	}
-	return (NULL);
+
+	return ((node == NULL) ? NULL : node->value);
 }
